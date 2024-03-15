@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>PDF Reader with Question Answering</title>
+</head>
+<body>
+<h1>PDF Reader</h1>
+<p>Please enter a question about the text below:</p>
+<textarea name="text" rows="10" cols="80">{{ text }}</textarea>
+<br>
+<form action="/question_answering" method="POST">
+<input type="text" name="question" placeholder="Enter your question here">
+<input type="submit" value="Get Answer">
+</form>
+</body>
+</html>
+
+
